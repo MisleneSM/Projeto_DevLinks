@@ -33,6 +33,7 @@ body {
     /* color, image, repeat, position/size*/
     background: var(--bg-url) no-repeat top center/cover;
     color: var(--text-color);
+    height: 100vh;
 }
 
 #container {
@@ -186,4 +187,18 @@ footer a {
 
 footer a:hover {
     color: var(--color-footer);
+}
+
+@media screen and (min-width: 700px){
+    :root {
+        --bg-url: url('./assets/bg-desktop.jpg')
+    }
+
+    .ligth {
+        --bg-url: url('./assets/bg-desktop-light.jpg')
+    }
+
+    body {
+        overflow-y: hidden;
+    }
 }
