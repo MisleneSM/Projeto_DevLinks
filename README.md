@@ -21,7 +21,7 @@ Desenvolvido por:
 
 Desenvolvido um mini projeto de agregador de links para utilizar como cartão de visitas online. Programa exclusivo e gratuito, promovido pela [Rocketseat](https://rocketseat.com.br) para ensino de tecnologias WEB, administrada pelo professor [Mayk Brito](https://github.com/maykbrito).
 
-Para acessar o resultado do projeto basta clicar aqui no [Link]()
+Para acessar o resultado do projeto basta clicar aqui no [Link](https://mislenesm.github.io/Projeto_DevLinks/)
 
 ## 2. Objetivos de aprendizagem✅
 
