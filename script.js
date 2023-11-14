@@ -8,6 +8,6 @@ function toggleMode() {
     if(html.classList.contains('ligth')){
         img.setAttribute('src', './assets/avatarLigth.png')
     }else {
-        img.setAttribute('src', './assets/avatar.png')
+        img.setAttribute('src', './assets/Avatar.png')
     }
 }
