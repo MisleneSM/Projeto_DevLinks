@@ -16,6 +16,7 @@
     --color-icon: #ffffff;
     --color-footer: rgba(255,255,255, 0.5);
     --switch-bg-url: url('./assets/moon-stars.svg');
+    --highlight-color: rgba(255, 255, 255, 0.2);
 }
 
 .ligth {
@@ -27,6 +28,7 @@
     --color-icon: #000000;
     --color-footer: #000;
     --switch-bg-url: url('./assets/sun.svg');
+    --highlight-color: rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -74,11 +76,16 @@ body {
     left: 0;
     z-index: 1;
     transform: translateY(-50%);
+
+    animation: slide-back 0.2s;
+}
+
+#switch button:hover {
+    outline: 8px solid var(--highlight-color);
 }
 
 .ligth #switch button {
-    right: 0;
-    left: initial;
+    animation: slide .2s forwards; /*Forwards mantém as propriedades*/
 }
 
 #switch span {
@@ -200,5 +207,25 @@ footer a:hover {
 
     body {
         overflow-y: hidden;
+    }
+}
+
+/*Adicionando animação de botão*/
+
+@keyframes slide {
+    from {
+        left: 0;
+    }
+    to{
+        left: 50%;
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+    to{
+        left: 0;
     }
 }
